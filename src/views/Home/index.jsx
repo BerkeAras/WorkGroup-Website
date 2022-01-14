@@ -26,7 +26,7 @@ export default function Home() {
                         <Link to="/" className="button button--light">Download</Link>
                     </div>
 
-                    <img src={mockup} alt="WorkGroup" />
+                    <img tabIndex={0} src={mockup} alt="WorkGroup" />
                 </div>
             </section>
 

@@ -23,6 +23,8 @@
 
 	.copyright {
 		font-size: 15px;
+		color: #ABB4BC;
+		text-decoration: none;
 	}
 
 	ul {
@@ -49,10 +51,23 @@
 				font-size: 15px;
 				transition: all .2s;
 
+				img {
+					height: 19px;
+					width: 19px;
+					float: left;
+					padding: 2px;
+					margin-right: 4px;
+				}
+
 				@media (max-width:768px) {
-					padding: 5px 0;
-					width: 100%;
-					display: block;
+					padding: 7px 0;
+					display: inline-block;
+
+					img {
+						float: right;
+						margin-right: 0;
+						margin-left: 4px;
+					}
 				}
 
 				&:hover,
