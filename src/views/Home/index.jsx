@@ -3,6 +3,7 @@ import {
 	Link
 } from "react-router-dom";
 import './style.scss';
+import TryWorkGroupModal from '../../components/tryWorkGroupModal';
 
 // Assets
 import mockup from '../../assets/mockup.png';
@@ -11,8 +12,14 @@ import security from '././../../assets/security.png';
 import openSource from '././../../assets/code.png';
 
 export default function Home() {
+
+    const [tryWorkGroupModalVisible, setTryWorkGroupModalVisible] = useState(false);
+
     return (
         <div className="view home" id="content">
+
+            {tryWorkGroupModalVisible && (<TryWorkGroupModal closeModal={() => {setTryWorkGroupModalVisible(false);}} />)}
+
             <section className="home-section">
                 <div className="home-section-backdrop">
                     <div className="home-section-backdrop-content">
@@ -22,8 +29,8 @@ export default function Home() {
                             WorkGroup increases productivity and the cohesion between colleagues. The self-hosted principle protects all your data and keeps everything on your server — all for free.
                         </p>
 
-                        <Link to="/" className="button">Try WorkGroup</Link>
-                        <Link to="/" className="button button--light">Download</Link>
+                        <button onClick={() => {setTryWorkGroupModalVisible(true)}} className="button">Try WorkGroup</button>
+                        <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
                     </div>
 
                     <img tabIndex={0} src={mockup} alt="WorkGroup" />
@@ -97,8 +104,8 @@ export default function Home() {
                     <p>
                         Contact us to get more information about how vou can use WorkGroup in your company.
                     </p>
-                    <Link to="/" className="button">Ask the Community</Link>
-                    <Link to="/" className="button button--light">Contact</Link>
+                    <a href="https://github.com/BerkeAras/WorkGroup/discussions" target="_blank" rel="noreferrer" className="button">Ask the Community</a>
+                    <a href="https://berkearas.de/?mtm_campaign=workgroup_landingpage_contact#contact" target="_blank" rel="noreferrer" className="button button--light">Contact</a>
                 </div>
             </section>
 
