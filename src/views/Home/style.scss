@@ -1,6 +1,6 @@
 .home-section {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 105px);
     background-image: url('../../assets/background.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     min-height: 750px;
 
     @media (max-width:1240px) {
-        height: 750px;
+        height: 100vh;
     }
 
     &-backdrop {
@@ -31,14 +31,15 @@
             position: absolute;
             top: calc(50% + 25px);
             transform: translateY(-50%);
+            max-width: calc(100% - 20px);
 
             h3 {
                 font-weight: bold;
                 font-size: 20px;
                 line-height: 24px;
-                letter-spacing: 0.07em;
+                letter-spacing: 0.15em;
                 text-transform: uppercase;
-                color: #B3B7BA;
+                color: #a3b8c8;
                 font-family: 'Inter', sans-serif;
             }
             h1 {
@@ -99,7 +100,12 @@
 }
 
 .home-2-section {
+    width: 100%;
     padding: 50px calc(50% - 600px);
+
+    @media (max-width:1300px) {
+        padding: 50px 10px;
+    }
 
     &-card {
         width: 100%;
@@ -125,8 +131,13 @@
 }
 
 .features-section {
+    width: 100%;
     padding: 50px calc(50% - 600px);
     text-align: center;
+
+    @media (max-width:1300px) {
+        padding: 50px 10px;
+    }
 
     &-grid {
         width: 100%;
@@ -136,6 +147,12 @@
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         margin-bottom: 30px;
+
+        @media (max-width:1000px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-row-gap: 20px;
+        }
 
         &-item {
             background: #FFFFFF;
@@ -158,8 +175,16 @@
 }
 
 .benefits-section {
+    width: 100%;
     padding: 50px calc(50% - 600px);
     margin-top: 50px;
+
+    @media (max-width:1300px) {
+        padding: 50px 10px;
+    }
+    @media (max-width:1000px) {
+        margin-top: 25px;
+    }
 
     .benefits-item {
         width: 100%;
@@ -167,6 +192,10 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px 0;
+
+        @media (max-width:1000px) {
+            padding: 25px 0;
+        }
 
         &-content {
             h1 {
@@ -180,11 +209,54 @@
         }
         &-image {
             min-width: 350px;
+
+            @media (max-width:1000px) {
+                min-width: 200px;
+            }
+            @media (max-width:800px) {
+                display: none;
+            }
             img {
                 height: 250px;
                 width: 250px;
                 object-fit: contain;
+
+                @media (max-width:1000px) {
+                    height: 150px;
+                    width: 150px;
+                }
             }
+        }
+    }
+}
+
+.contact-section {
+    width: 100%;
+    padding: 50px calc(50% - 600px);
+
+    @media (max-width:1300px) {
+        padding: 50px 10px;
+    }
+
+    &-card {
+        width: 100%;
+        text-align: center;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+        box-shadow: 0px 8px 14px #dde4ea;
+        border-radius: 15px;
+        padding: 30px 15px;
+
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .button {
+            margin: 0 5px;
         }
     }
 }

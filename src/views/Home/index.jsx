@@ -12,7 +12,7 @@ import openSource from '././../../assets/code.png';
 
 export default function Home() {
     return (
-        <div className="home">
+        <div className="view home" id="content">
             <section className="home-section">
                 <div className="home-section-backdrop">
                     <div className="home-section-backdrop-content">
@@ -88,6 +88,17 @@ export default function Home() {
                         <p>WorkGroup is - and will remain - free. Because it is open source, you can copy, adapt and use the code as you wish. So why not try it out? You have nothing to lose!</p>
                     </div>
                     <div style={{textAlign:'right'}} className="benefits-item-image"><img src={openSource} alt="Open Source" /></div>
+                </div>
+            </section>
+
+            <section className="contact-section">
+                <div className="contact-section-card">
+                    <h1>Need help?</h1>
+                    <p>
+                        Contact us to get more information about how vou can use WorkGroup in your company.
+                    </p>
+                    <Link to="/" className="button">Ask the Community</Link>
+                    <Link to="/" className="button button--light">Contact</Link>
                 </div>
             </section>
 

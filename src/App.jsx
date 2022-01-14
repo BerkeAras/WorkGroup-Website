@@ -1,5 +1,6 @@
 import './styles/global.scss';
 import Header from './components/header';
+import Footer from './components/footer';
 import {
 	BrowserRouter,
 	Routes,
@@ -17,6 +18,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 				</Routes>
+				<Footer />
 			</div>
 		</BrowserRouter>
 	);

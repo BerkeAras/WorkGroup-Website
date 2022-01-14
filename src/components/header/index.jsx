@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.scss';
 import Logo from '../../assets/logo.svg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -9,6 +9,9 @@ export default function Header() {
 
     return (
         <div className="header">
+            <a tabIndex={1} href="#content" className="skip-to-content button">
+                Skip to content
+            </a>
             <NavLink to="/" className="header-logo">
                 <img src={Logo} alt="WorkGroup Logo" />
             </NavLink>
