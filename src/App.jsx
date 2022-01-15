@@ -12,6 +12,7 @@ import ReactGA from "react-ga4";
 // Views
 import Home from './views/Home';
 import Error404 from './views/Error404';
+import Features from './views/Features';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
 				<Routes>
 					<Route path="*" element={<Error404 />} />
 					<Route path="/" element={<Home />} />
+					<Route path="/features" element={<Features />} />
 				</Routes>
 				<Footer />
 			</div>

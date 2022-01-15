@@ -45,8 +45,8 @@ export default function Home() {
                         <br />
                         Try it on your local machine or use our hosted demo.
                     </p>
-                    <Link to="/" className="button">Download</Link>
-                    <Link to="/" className="button button--light">Demo</Link>
+                    <a href="https://demo1.workgroup.berkearas.de/?utm_source=workgroup_landingpage_try_modal&amp;utm_medium=workgroup_landingpage_try_modal&amp;utm_campaign=workgroup_landingpage_try_modal" target="_blank" rel="noreferrer" className="button">Try WorkGroup Demo</a>&nbsp;
+                    <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
                 </div>
             </section>
 
