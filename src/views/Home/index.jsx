@@ -47,7 +47,7 @@ export default function Home() {
                         <br />
                         Try it on your local machine or use our hosted demo.
                     </p>
-                    <a href="https://demo1.workgroup.berkearas.de/?utm_source=workgroup_landingpage_try_modal&amp;utm_medium=workgroup_landingpage_try_modal&amp;utm_campaign=workgroup_landingpage_try_modal" target="_blank" rel="noreferrer" className="button">Try WorkGroup Demo</a>&nbsp;
+                    <button onClick={() => {setTryWorkGroupModalVisible(true)}} className="button">Try WorkGroup</button>&nbsp;
                     <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
                 </div>
                 <div className="home-try-section-image" style={{backgroundImage:`url(${devices})`}}></div>
@@ -61,7 +61,7 @@ export default function Home() {
                         <br />
                         Try it on your local machine or use our hosted demo.
                     </p>
-                    <a href="https://demo1.workgroup.berkearas.de/?utm_source=workgroup_landingpage_try_modal&amp;utm_medium=workgroup_landingpage_try_modal&amp;utm_campaign=workgroup_landingpage_try_modal" target="_blank" rel="noreferrer" className="button">Try WorkGroup Demo</a>&nbsp;
+                    <button onClick={() => {setTryWorkGroupModalVisible(true)}} className="button">Try WorkGroup</button>&nbsp;
                     <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
                 </div>
             </section>
