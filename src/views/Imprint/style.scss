@@ -1,0 +1,29 @@
+.imprint {
+    &-warning {
+        display: flex;
+        width: 100%;
+        background: #ff980061;
+        align-items: center;
+        padding: 12px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ffc062;
+        font-size: 19px;
+        color: #20466a;
+
+        img {
+            margin-right: 15px;
+        }
+        b {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 640px) {
+            padding: 10px;
+
+            img, b {
+                display: none;
+            }
+        }
+    }
+}

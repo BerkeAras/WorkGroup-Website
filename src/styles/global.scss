@@ -18,6 +18,29 @@ html, body {
 #root, .App, .view {
     width: 100%;
 }
-h1 {
+h1, a {
     color: #20466a;
+}
+.view {
+    &--subpage {
+        padding: 0 calc(50% - 600px);
+        padding-top: 105px;
+
+        @media (max-width:1300px) {
+            padding: 90px 10px 0 10px;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 28px;
+            margin-top: 25px;
+
+            b, a {
+                color: #20466a;
+            }
+        }
+        ul, li, a {
+            font-size: 19px;
+        }
+    }
 }
