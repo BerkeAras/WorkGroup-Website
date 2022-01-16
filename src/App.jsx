@@ -13,6 +13,8 @@ import ReactGA from "react-ga4";
 import Home from './views/Home';
 import Error404 from './views/Error404';
 import Features from './views/Features';
+import Imprint from './views/Imprint';
+import Datapolicy from './views/Datapolicy';
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
 					<Route path="*" element={<Error404 />} />
 					<Route path="/" element={<Home />} />
 					<Route path="/features" element={<Features />} />
+					<Route path="/imprint" element={<Imprint />} />
+					<Route path="/data-policy" element={<Datapolicy />} />
 				</Routes>
 				<Footer />
 			</div>
