@@ -43,8 +43,7 @@ export default function TryWorkGroupModal(props) {
                         <b>E-Mail:</b> john.doe@mail.com<br />
                         <b>Password:</b> password
                     </p><br />
-                    <a href="https://demo1.workgroup.berkearas.de/?utm_source=workgroup_landingpage_try_modal&amp;utm_medium=workgroup_landingpage_try_modal&amp;utm_campaign=workgroup_landingpage_try_modal" target="_blank" rel="noreferrer" className="button">Try WorkGroup Demo</a>&nbsp;
-                    <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
+                    <a href="https://demo1.workgroup.berkearas.de/?utm_source=workgroup_landingpage_try_modal&amp;utm_medium=workgroup_landingpage_try_modal&amp;utm_campaign=workgroup_landingpage_try_modal" target="_blank" rel="noreferrer" className="button">Open Demo</a>&nbsp;
                 </div>
             </div>
         </FocusTrap>

@@ -24,10 +24,24 @@
             h1 {
                 font-size: 28px;
                 margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-size: 14px;
+                    display: inline-block;
+                    padding: 3px 11px;
+                    background: #2c85d06b;
+                    border-radius: 100px;
+                    font-family: "Inter", sans-serif;
+                    letter-spacing: 1px;
+                    color: #103f66;
+                    margin-left: 10px;
+                }
             }
             p {
                 font-size: 19px;
-                line-height: 25px;
+                line-height: 28px;
             }
         }
 
@@ -180,6 +194,60 @@
 
                 @media (max-width: 1700px) {
                     padding-left: 40px;
+                }
+                @media (max-width: 1000px) {
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        &--coming-soon {
+            padding: 0;
+            padding-top: 50px;
+            @media (max-width: 1000px) {
+                padding: 50px 20px;
+            }
+            background: #f0f5f7;
+
+            @media (max-width: 1700px) {
+                padding-top: 50px;
+            }
+
+            @media (max-width: 1000px) {
+                padding: 50px 20px;
+            }
+
+            .features-item-image {
+                position: relative;
+                height: 600px;
+                background-position: top right;
+                background-size: calc(100% + 70px);
+                margin-right: 25px;
+                background-repeat: no-repeat;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #f0f5f7b3;
+                    backdrop-filter: blur(3px);
+                }
+
+                @media (max-width: 1700px) {
+                    background-position: center right;
+                }
+                @media (max-width: 1000px) {
+                    display: none;
+                }
+            }
+            .features-item-content {
+                padding-right: calc(50% - 800px);
+
+                @media (max-width: 1700px) {
+                    padding-right: 40px;
                 }
                 @media (max-width: 1000px) {
                     padding: 0;
