@@ -124,22 +124,30 @@
     justify-content: space-between;
     padding: 0;
     padding-top: 50px;
-    margin-top: 25px;
     margin-bottom: 50px;
+    background: #dde8ec;
+	margin-top: 0;
+	box-shadow: inset 0 -40px 16px -40px #acbbc03b;
 
     @media (max-width:1000px) {
         display: none;
+    }
+    @media (max-width:1450px) {
+        padding-bottom: 50px;
     }
 
     &-image {
         width: 50%;
         height: 600px;
         background-position: top left;
-        background-size: calc(100% + 120px);
+        background-size: cover;
         margin-left: 25px;
         background-repeat: no-repeat;
+        box-shadow: inset 0 -40px 16px -40px #acbbc03b;
 
-        @media (max-width:1350px) {
+        @media (max-width:1450px) {
+            box-shadow: none;
+            background-image: url('../../assets/home.png') !important;
             background-position: center left;
         }
     }

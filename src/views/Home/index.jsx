@@ -7,7 +7,7 @@ import TryWorkGroupModal from '../../components/tryWorkGroupModal';
 
 // Assets
 import mockup from '../../assets/mockup.png';
-import devices from '../../assets/home.png';
+import devices from '../../assets/home-cropped.png';
 import teamMembers from '../../assets/team.jpg';
 import team from '././../../assets/team.png';
 import security from '././../../assets/security.png';
@@ -35,7 +35,7 @@ export default function Home() {
                         <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
                     </div>
 
-                    <img tabIndex={0} src={mockup} alt="WorkGroup" />
+                    <img loading="lazy" tabIndex={0} src={mockup} alt="WorkGroup" />
                 </div>
             </section>
 
@@ -96,10 +96,10 @@ export default function Home() {
                         <h1>Reach your employees</h1>
                         <p>Reach all of your employees in no time. All are included. Do you only want to address your colleagues in your department? Then use the group function!</p>
                     </div>
-                    <div style={{textAlign:'right'}} className="benefits-item-image"><img src={team} alt="Reach your employees" /></div>
+                    <div style={{textAlign:'right'}} className="benefits-item-image"><img loading="lazy"  src={team} alt="Reach your employees" /></div>
                 </div>
                 <div className="benefits-item">
-                    <div style={{textAlign:'left'}} className="benefits-item-image"><img src={security} alt="Secure Network" /></div>
+                    <div style={{textAlign:'left'}} className="benefits-item-image"><img loading="lazy"  src={security} alt="Secure Network" /></div>
                     <div className="benefits-item-content">
                         <h1>Secure Network</h1>
                         <p>Your data is with you. Due to the self-hosted principle, no data is transmitted to external servers. If your server is secure, WorkGroup is secure too. Companies with critical infrastructure can use WorkGroup in a dedicated instance.</p>
@@ -110,7 +110,7 @@ export default function Home() {
                         <h1>Open Source</h1>
                         <p>WorkGroup is - and will remain - free. Because it is open source, you can copy, adapt and use the code as you wish. So why not try it out? You have nothing to lose!</p>
                     </div>
-                    <div style={{textAlign:'right'}} className="benefits-item-image"><img src={openSource} alt="Open Source" /></div>
+                    <div style={{textAlign:'right'}} className="benefits-item-image"><img loading="lazy"  src={openSource} alt="Open Source" /></div>
                 </div>
             </section>
 
