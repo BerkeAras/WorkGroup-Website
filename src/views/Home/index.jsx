@@ -7,6 +7,8 @@ import TryWorkGroupModal from '../../components/tryWorkGroupModal';
 
 // Assets
 import mockup from '../../assets/mockup.png';
+import devices from '../../assets/home.png';
+import teamMembers from '../../assets/team.jpg';
 import team from '././../../assets/team.png';
 import security from '././../../assets/security.png';
 import openSource from '././../../assets/code.png';
@@ -35,6 +37,20 @@ export default function Home() {
 
                     <img tabIndex={0} src={mockup} alt="WorkGroup" />
                 </div>
+            </section>
+
+            <section className="home-try-section">
+                <div className="home-try-section-content">
+                    <h1>WorkGroup in your Company</h1>
+                    <p>
+                        WorkGroup is an open source project, so it is free to use and modify. Why don&apos;t you give it a try?
+                        <br />
+                        Try it on your local machine or use our hosted demo.
+                    </p>
+                    <a href="https://demo1.workgroup.berkearas.de/?utm_source=workgroup_landingpage_try_modal&amp;utm_medium=workgroup_landingpage_try_modal&amp;utm_campaign=workgroup_landingpage_try_modal" target="_blank" rel="noreferrer" className="button">Try WorkGroup Demo</a>&nbsp;
+                    <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
+                </div>
+                <div className="home-try-section-image" style={{backgroundImage:`url(${devices})`}}></div>
             </section>
 
             <section className="home-2-section">

@@ -117,9 +117,79 @@
     }
 }
 
+.home-try-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+    @media (max-width:1000px) {
+        display: none;
+    }
+
+    &-image {
+        width: 50%;
+        height: 600px;
+        background-position: top left;
+        background-size: calc(100% + 120px);
+        margin-left: 25px;
+        background-repeat: no-repeat;
+
+        @media (max-width:1350px) {
+            background-position: center left;
+        }
+    }
+    &-content {
+        width: 50%;
+        padding-left: calc(50% - 800px);
+        padding-right: 25px;
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: 14px;
+                display: inline-block;
+                padding: 3px 11px;
+                background: #2c85d06b;
+                border-radius: 100px;
+                font-family: "Inter", sans-serif;
+                letter-spacing: 1px;
+                color: #103f66;
+                margin-left: 10px;
+            }
+        }
+        p {
+            font-size: 19px;
+            line-height: 28px;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 1700px) {
+            padding-left: 40px;
+        }
+    }
+}
+
 .home-2-section {
     width: 100%;
     padding: 50px calc(50% - 600px);
+    display: none;
+
+    @media (max-width:1000px) {
+        display: block;
+    }
 
     @media (max-width:1300px) {
         padding: 50px 10px;
@@ -186,7 +256,7 @@
             }
             p {
                 font-size: 19px;
-                line-height: 25px;
+                line-height: 28px;
             }
         }
     }
@@ -223,7 +293,7 @@
             }
             p {
                 font-size: 19px;
-            	line-height: 25px;
+            	line-height: 28px;
             }
         }
         &-image {
