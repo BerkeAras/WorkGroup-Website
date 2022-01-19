@@ -5,8 +5,8 @@
 	display: inline-block;
 	text-decoration: none;
 	text-align: center;
-	font-family: "PT Sans", sans-serif;
-	font-weight: 600;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
 	font-size: 17px;
 	color: #FFFFFF;
     border: 0;
@@ -16,15 +16,15 @@
     box-shadow: 0 0 0 0px rgb(33 133 208 / 38%);
 
     &:hover {
-        transform: scale(.97);
+        transform: scale(1.03);
     }
     &:focus-visible {
-        transform: scale(.97);
+        transform: scale(1.03);
         background: darken(#2185D0, 10%);
         box-shadow: 0 0 0 4px rgb(33 133 208 / 38%);
     }
     &:active {
-        transform: scale(.94);
+        transform: scale(1.06);
         box-shadow: 0 0 0 4px rgb(33 133 208 / 38%);
     }
 
@@ -34,7 +34,7 @@
         box-shadow: 0 0 0 0px rgba(199, 199, 199, 0.4);
 
         &:focus-visible {
-            transform: scale(.97);
+            transform: scale(1.03);
             background: darken(#E0E1E2, 10%);
             box-shadow: 0 0 0 4px rgba(199, 199, 199, 0.4);
         }
