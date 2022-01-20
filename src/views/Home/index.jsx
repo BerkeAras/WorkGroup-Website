@@ -35,7 +35,7 @@ export default function Home() {
                         <a href="https://github.com/BerkeAras/WorkGroup/releases" target="_blank" rel="noreferrer" className="button button--light">Download</a>
                     </div>
 
-                    <img loading="lazy" tabIndex={0} src={mockup} alt="WorkGroup" />
+                    <img loading="lazy" src={mockup} alt="WorkGroup" />
                 </div>
             </section>
 
